@@ -70,6 +70,6 @@ export const tenThousandFormat = (n) => {
 
 export const scrollToTop = () => {
     scroll.scrollToTop({
-        duration: 400
+        duration: 600
     });
 }

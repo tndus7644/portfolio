@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import {media} from "../../../styled/Responsive.Styled";
 
 const List = ({data, render}) => {
 
-    return(
+    return (
         <Container>
             <Row>
                 {
@@ -29,8 +30,11 @@ const Row = styled.div`
 `;
 
 const Col = styled.div`
-    width: 33.3333%;
+  width: 33.3333%;
   padding: 15px;
+  ${media.lessThan("md")`
+  width: 50%;
+  `};
 `;
 
 export default List;

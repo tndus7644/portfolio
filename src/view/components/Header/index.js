@@ -2,9 +2,9 @@ import React, {useRef, useEffect} from 'react';
 import styled, {css} from 'styled-components';
 import {AiOutlineMenu} from "react-icons/all";
 import {media} from "../../../styled/Responsive.Styled";
-import {Link} from 'react-scroll'
+import {Link} from 'react-scroll';
 import {setBoxShadow} from "../../../styled/Util.Styled";
-import {setScrollEvent} from "../../../hooks/useScrollEvent";
+import {setScrollEvent, useScrollEvent} from "../../../hooks/useScrollEvent";
 
 
 const Header = () => {
@@ -28,28 +28,34 @@ const Header = () => {
         },
     ]
 
+    const headerRef = useRef(null);
+
+    useEffect(() => {
+        if (headerRef.current) {
+            setScrollEvent(headerRef.current, 'isActive', 600)
+        }
+    }, [])
+
     return (
-        <Container>
+        <Container ref={headerRef}>
             <Logo>수연</Logo>
             <Nav>
-                {menus.map((item, i) =>
+                {menus.map((item, i) => (
                     <NavItem activeClass="isActive"
                              key={i}
                              to={item.to}
-                             // spy={true}
-                             // smooth={true}
-                             // hashSpy={true}
-                             // offset={-70}
-                             // duration={500}
-                             // delay={1000}
-                             // isDynamic={true}
-                             // // onSetActive={this.handleSetActive}
-                             // // onSetInactive={this.handleSetInactive}
-                             // // ignoreCancelEvents={false}
+                             spy={true}
+                             smooth={true}
+                             hashSpy={true}
+                             offset={-70}
+                             duration={500}
+                             delay={100}
+                             ignoreCancelEvents={false}
                     >
                         {item.name}
                     </NavItem>
-                )}
+                ))
+                }
             </Nav>
             <ButtonMenu>
                 <AiOutlineMenu/>
@@ -71,6 +77,12 @@ const Container = styled.header`
   z-index: 1000;
   box-shadow: ${setBoxShadow(1)};
   background: #fff;
+  transform: translateY(-100%);
+  transition: 0.4s;
+
+  &.isActive {
+    transform: none;
+  }
 `;
 
 const Logo = styled.div`

@@ -1,15 +1,22 @@
-import React, {useRef} from 'react';
+import React, {useEffect, useRef} from 'react';
 import styled from 'styled-components';
 import {AiOutlineArrowUp} from "react-icons/all";
 import {setBoxShadow} from "../../../styled/Util.Styled";
 import {scrollToTop} from "../../../lib/Common";
+import {setScrollEvent} from "../../../hooks/useScrollEvent";
 
 const BackTop = () => {
 
     const ref = useRef(null);
 
+    useEffect(() => {
+        if (ref.current) {
+            setScrollEvent(ref.current, 'isActive', 1500)
+        }
+    }, [])
+
     return (
-        <Container onClick={scrollToTop}>
+        <Container onClick={scrollToTop} ref={ref}>
             <AiOutlineArrowUp/>
         </Container>
     )
@@ -30,6 +37,11 @@ const Container = styled.div`
   cursor: pointer;
   transition: 0.4s;
   border-radius: 50%;
+  transform: translateY(200px);
+  
+  &.isActive{
+    transform:none;
+  }
 
   &:hover {
     box-shadow: ${setBoxShadow(3)};
