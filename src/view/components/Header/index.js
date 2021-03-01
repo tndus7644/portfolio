@@ -1,10 +1,10 @@
 import React, {useRef, useEffect} from 'react';
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 import {AiOutlineMenu} from "react-icons/all";
 import {media} from "../../../styled/Responsive.Styled";
 import {Link} from 'react-scroll';
 import {setBoxShadow} from "../../../styled/Util.Styled";
-import {setScrollEvent, useScrollEvent} from "../../../hooks/useScrollEvent";
+import {setScrollEvent} from "../../../hooks/useScrollEvent";
 
 
 const Header = () => {
