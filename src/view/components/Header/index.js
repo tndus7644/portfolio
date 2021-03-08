@@ -7,28 +7,11 @@ import {setBoxShadow} from "../../../styled/Util.Styled";
 import {setScrollEvent} from "../../../hooks/useScrollEvent";
 import {appActions} from "../../../redux/ActionCreators";
 import {useSelector} from "react-redux";
+import {menus} from "../Menus";
 
 
 const Header = () => {
 
-    const menus = [
-        {
-            name: "visual",
-            to: 'visual',
-        },
-        {
-            name: "about",
-            to: 'about',
-        },
-        {
-            name: "works",
-            to: 'works',
-        },
-        {
-            name: "skills",
-            to: 'skills',
-        },
-    ]
 
     const headerRef = useRef(null);
 
