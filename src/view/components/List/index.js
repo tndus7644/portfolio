@@ -35,6 +35,10 @@ const Col = styled.div`
   ${media.lessThan("md")`
   width: 50%;
   `};
+  
+  ${media.lessThan("sm")`
+  width:100%;
+  `};
 `;
 
 export default List;

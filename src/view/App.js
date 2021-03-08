@@ -4,6 +4,7 @@ import {GlobalStyle} from "../styled/Reset.Styled";
 import Header from "./components/Header";
 import Routes from "./routes/Routes";
 import BackTop from "./components/Button/BackTop";
+import Sidebar from "./components/Sidebar";
 
 const App = () => {
 
@@ -11,6 +12,7 @@ const App = () => {
         <Container>
             <GlobalStyle/>
             <Header/>
+            <Sidebar/>
             <Routes/>
             <BackTop/>
         </Container>

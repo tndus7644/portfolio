@@ -5,6 +5,8 @@ import {media} from "../../../styled/Responsive.Styled";
 import {Link} from 'react-scroll';
 import {setBoxShadow} from "../../../styled/Util.Styled";
 import {setScrollEvent} from "../../../hooks/useScrollEvent";
+import {appActions} from "../../../redux/ActionCreators";
+import {useSelector} from "react-redux";
 
 
 const Header = () => {
@@ -36,6 +38,16 @@ const Header = () => {
         }
     }, [])
 
+    const {sidebar} = useSelector(state => state.app);
+
+    const handleSidebar = () => {
+        appActions.updateState({
+            sidebar: true
+        })
+    }
+
+    console.log("sidebar", sidebar)
+
     return (
         <Container ref={headerRef}>
             <Logo>수연</Logo>
@@ -57,7 +69,7 @@ const Header = () => {
                 ))
                 }
             </Nav>
-            <ButtonMenu>
+            <ButtonMenu onClick={handleSidebar}>
                 <AiOutlineMenu/>
             </ButtonMenu>
         </Container>
@@ -113,19 +125,16 @@ const NavItem = styled(Link)`
   &:hover {
     color: #18f;
   }
-
-
 `;
-
 
 const ButtonMenu = styled.div`
   font-size: 24px;
   padding: 10px;
   display: none;
-
-
+  
   ${media.lessThan("md")`
     display: flex;
+  cursor: pointer;
   `};
 
 `;
