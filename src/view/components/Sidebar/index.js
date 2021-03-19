@@ -42,14 +42,14 @@ const Sidebar = () => {
 const Container = styled.div`
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   bottom: 0;
   width: 200px;
   background: #fff;
   z-index: 1500;
   box-shadow: 0 1px 10px 8px rgba(0, 0, 0, 0.05);
   transition: 0.3s;
-  transform: translateX(120%);
+  transform: translateX(-120%);
 
   &.show {
     transform: none;
@@ -69,7 +69,7 @@ const NavItem = styled(Link)`
 
   &.isActive,
   &:hover {
-    color: #18f;
+    color: #ff8644;
   }
 `;
 

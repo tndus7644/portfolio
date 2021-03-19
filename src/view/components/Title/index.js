@@ -28,8 +28,9 @@ const Container = styled.div`
   p{
     margin-top: 15px;
     color: #777;
-    line-height: 1.6;
-    font-size: 18px;
+    line-height: 1.7;
+    font-size: 16px;
+    word-break: keep-all;
   }
 `;
 

@@ -29,7 +29,6 @@ const Container = styled.div`
   overflow: hidden;
   a {
     text-decoration: none;
-
   }
 `;
 
@@ -41,7 +40,7 @@ const Thumb = styled.a`
     height: 230px;
     width: 100%;
     object-fit: cover;
-    transition: 0.6s;
+    transition: 0.5s;
     
     &:hover{
       transform: scale(1.03);

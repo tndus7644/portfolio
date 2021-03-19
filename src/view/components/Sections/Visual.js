@@ -8,7 +8,8 @@ const Visual = () => {
         <Container name={"visual"}>
             <Overlay alpha={0.4}/>
             <Content>
-                <h1>Portfolio</h1>
+                    <h1>Front end engineer</h1>
+                    <p>Suyeon's portfoilo</p>
             </Content>
         </Container>
     )
@@ -25,10 +26,15 @@ const Container = styled.div`
 const Content = styled.div`
   position: relative;
     h1{
-      font-size: 55px;
+      font-size: 3em;
       color: #fff;
-      text-transform: capitalize;
+      line-height: 1.5;
     }
+  
+  p{
+    color: #fff;
+    font-size: 2em;
+  }
 `;
 
 
