@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {ContentContainer, SectionContainer} from "../Layout/Layout.Styled";
 import Title from "../Title";
+import {media} from "../../../styled/Responsive.Styled";
 
 const Skills = () => {
 
@@ -10,7 +11,7 @@ const Skills = () => {
             <ContentContainer>
                 <Title title={"Skills"}/>
                 <SkillsContent>
-                    <h1>Design |</h1>
+                    <h1>Design</h1>
                     <ul>
                         <li>Illustrator</li>
                         <li>Photoshop</li>
@@ -18,7 +19,7 @@ const Skills = () => {
                     </ul>
                 </SkillsContent>
                 <SkillsContent>
-                    <h1>Development |</h1>
+                    <h1>Development</h1>
                     <ul>
                         <li>Html5</li>
                         <li>Css</li>
@@ -41,10 +42,19 @@ const SkillsContent = styled.div`
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
-  h1{
+  align-items: center;
+  ${media.lessThan("sm")`
+    flex-direction: column;
+  `};
+
+  h1 {
     color: #333;
     font-weight: 600;
     font-size: 18px;
+
+    ${media.lessThan("sm")`
+        margin-bottom: 20px;
+  `};
   }
 
   ul {
@@ -53,8 +63,20 @@ const SkillsContent = styled.div`
     li {
       padding: 0 15px;
       color: #666;
+      text-align: center;
+
+      ${media.lessThan("sm")`
+      padding: 10px 0;
+  `};
     }
+
+    
+    ${media.lessThan("sm")`
+    flex-direction: column;
+  `};
   }
+
+
 `;
 
 
