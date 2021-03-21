@@ -6,12 +6,9 @@ import {Link} from 'react-scroll';
 import {setBoxShadow} from "../../../styled/Util.Styled";
 import {setScrollEvent} from "../../../hooks/useScrollEvent";
 import {appActions} from "../../../redux/ActionCreators";
-import {useSelector} from "react-redux";
 import {menus} from "../Menus";
 
-
 const Header = () => {
-
 
     const headerRef = useRef(null);
 
@@ -21,7 +18,6 @@ const Header = () => {
         }
     }, [])
 
-    const {sidebar} = useSelector(state => state.app);
 
     const handleSidebar = () => {
         appActions.updateState({
@@ -29,7 +25,6 @@ const Header = () => {
         })
     }
 
-    console.log("sidebar", sidebar)
 
     return (
         <Container ref={headerRef}>

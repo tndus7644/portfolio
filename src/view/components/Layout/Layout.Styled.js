@@ -10,6 +10,7 @@ export const PageContainer = styled.div`
 
 export const SectionContainer = styled.div`
   padding: 100px 0;
+  height: 100vh;
 `;
 
 export const ContentContainer = styled.div`
