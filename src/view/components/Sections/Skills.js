@@ -25,8 +25,10 @@ const Skills = () => {
                         <li>Css</li>
                         <li>Sass</li>
                         <li>React</li>
-                        <li>TypeScript</li>
-                        <li>Javascript</li>
+                        <li>Styled-components</li>
+                        <li>Redux</li>
+                        <li>Redux Saga</li>
+                        <li>Javascript ES6</li>
                     </ul>
                 </SkillsContent>
             </ContentContainer>
@@ -59,6 +61,7 @@ const SkillsContent = styled.div`
 
   ul {
     display: flex;
+    align-items: center;
 
     li {
       padding: 0 15px;
