@@ -24,8 +24,8 @@ const BackTop = () => {
 
 const Container = styled.div`
   position: fixed;
-  right: 60px;
-  bottom: 80px;
+  right: 5%;
+  bottom: 5%;
   width: 56px;
   height: 56px;
   display: flex;

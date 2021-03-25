@@ -32,7 +32,14 @@ const works = [
         description:"제 github 사이트입니다.",
         url:"https://github.com/tndus7644",
         imgSrc:"https://images.unsplash.com/photo-1591453089343-9ee5e4ac7e2d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
-        tags:["react", "redux saga", "redux", "styled components"]
+        tags:[]
+    },
+    {
+        name:"Blog",
+        description:"공부 기록용 블로그입니다.",
+        url:"https://gudoc.tistory.com/",
+        imgSrc:"https://images.unsplash.com/photo-1519337265831-281ec6cc8514?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+        tags:[]
     }
 ]
 
