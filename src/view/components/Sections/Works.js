@@ -40,6 +40,13 @@ const works = [
         url:"https://gudoc.tistory.com/",
         imgSrc:"https://images.unsplash.com/photo-1519337265831-281ec6cc8514?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
         tags:[]
+    },
+    {
+        name:"Notion",
+        description:"전 회사에서 수행한 프로젝트 목록입니다.",
+        url:"https://www.notion.so/60273d44451949a98c90c4d9b73140b5?pvs=4",
+        imgSrc:"https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        tags:[]
     }
 ]
 
