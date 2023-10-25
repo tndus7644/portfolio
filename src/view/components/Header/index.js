@@ -28,7 +28,7 @@ const Header = () => {
 
     return (
         <Container ref={headerRef}>
-            <Logo>수연</Logo>
+            <Logo>SUYEON</Logo>
             <Nav>
                 {menus.map((item, i) => (
                     <NavItem activeClass="isActive"

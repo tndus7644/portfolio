@@ -1,11 +1,7 @@
 export const menus = [
     {
-        name: "visual",
+        name: "top",
         to: 'visual',
-    },
-    {
-        name: "about",
-        to: 'about',
     },
     {
         name: "works",

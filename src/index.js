@@ -6,6 +6,7 @@ import {Router} from "react-router-dom";
 import {Provider} from 'react-redux';
 import store from "./redux/store";
 import HISTORY from "./lib/History";
+import "./styled/Font.css";
 
 ReactDOM.render(
     <Provider store={store}>

@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <Container>
             <FooterTitle>
-                copyright(c) 2021. Suyeon Seo all right reserved.
+                copyright(c) 2023. Suyeon Seo all right reserved.
             </FooterTitle>
         </Container>
     )
