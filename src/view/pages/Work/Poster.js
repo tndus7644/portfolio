@@ -79,13 +79,6 @@ const Img = styled.img`
   max-width: 500px;
 `;
 
-const Line = styled.div`
-  border: 1px solid #ff8644;
-  width: 100%;
-  max-width: 500px;
-  height: 1px;
-  margin: 20px 0;
-`;
 
 const Info = styled.div`
   margin: 30px;
