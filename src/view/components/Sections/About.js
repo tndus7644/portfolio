@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import {ContentContainer, SectionContainer} from "../Layout/Layout.Styled";
-import Title from "../Title";
 import Profile from '../../../images/profile.png';
 
 const About = () => {
