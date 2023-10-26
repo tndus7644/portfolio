@@ -14,7 +14,7 @@ const Footer = () => {
 }
 
 const Container = styled(ContentContainer)`
-  padding: 30px 0;
+    padding: 100px 0 30px 0;
 `;
 
 const FooterTitle = styled.p`

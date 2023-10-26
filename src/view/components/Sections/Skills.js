@@ -15,7 +15,8 @@ const Skills = () => {
                     <ul>
                         <li>Illustrator</li>
                         <li>Photoshop</li>
-                        <li>Zeplin</li>
+                        <li>Indesign</li>
+                        <li>Figma</li>
                     </ul>
                 </SkillsContent>
                 <SkillsContent>
@@ -27,7 +28,6 @@ const Skills = () => {
                         <li>React</li>
                         <li>Styled-components</li>
                         <li>Redux</li>
-                        <li>Redux Saga</li>
                         <li>Javascript ES6</li>
                     </ul>
                 </SkillsContent>
@@ -62,6 +62,7 @@ const SkillsContent = styled.div`
   ul {
     display: flex;
     align-items: center;
+    list-style: none;
 
     li {
       padding: 0 15px;

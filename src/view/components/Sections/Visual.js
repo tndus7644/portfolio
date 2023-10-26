@@ -8,7 +8,7 @@ const Visual = () => {
         <Container name={"visual"}>
             <Overlay alpha={0.4}/>
             <Content>
-                    <h1>Designer engineer</h1>
+                    <h1>Designer</h1>
                     <p>Suyeon's portfoilo</p>
             </Content>
         </Container>

@@ -2,17 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 import Tags from "../Tags";
 import {setBoxShadow} from "../../../styled/Util.Styled";
+import {Link} from "react-router-dom";
 
 const WorkCard = ({name, description, url, tags, imgSrc}) => {
 
     return (
         <Container>
-            <Thumb href={url} target={'_blank'} rel={"noreferrer"}>
+            <Thumb to={url}>
                 <img src={imgSrc} alt=""/>
             </Thumb>
             <Desc>
                 <h3>
-                    <a href={url} target={'_blank'} rel={"noreferrer"}>
+                    <a href={url}>
                         {name}
                     </a>
                 </h3>
@@ -32,12 +33,12 @@ const Container = styled.div`
   }
 `;
 
-const Thumb = styled.a`
+const Thumb = styled(Link)`
   display: flex;
   overflow: hidden;
 
   img {
-    height: 230px;
+    height: 260px;
     width: 100%;
     object-fit: cover;
     transition: 0.5s;
@@ -60,7 +61,7 @@ const Desc = styled.div`
       color: #333;
 
       &:hover {
-        color: #18f;
+        color: #ff8644;
       }
     }
   }

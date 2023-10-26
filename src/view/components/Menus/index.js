@@ -4,6 +4,10 @@ export const menus = [
         to: 'visual',
     },
     {
+        name: "about",
+        to: 'about',
+    },
+    {
         name: "works",
         to: 'works',
     },

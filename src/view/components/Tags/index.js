@@ -25,12 +25,12 @@ const Tag = styled.div`
   align-items: center;
   background: #eee;
   color: #777;
-  font-size: 10px;
+  font-size: 12px;
   margin-right: 8px;
   margin-bottom: 8px;
   white-space: nowrap;
   text-transform: capitalize;
-  border-radius: 2px;
+  border-radius: 4px;
 `;
 
 export default Tags;

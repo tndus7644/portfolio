@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import {ContentContainer, SectionContainer} from "../Layout/Layout.Styled";
 import Profile from '../../../images/profile.png';
+import ProgressBar from "@ramonak/react-progress-bar";
+import {media} from "../../../styled/Responsive.Styled";
 
 const About = () => {
 
@@ -11,6 +13,8 @@ const About = () => {
                 <Produce>
                     <FirstSection>
                         <ProfileImg src={Profile} alt={"profile"}/>
+                        <hr/>
+                        <h1>Su Yeon Seo</h1>
                     </FirstSection>
                     <SecondSection>
                         <Side>
@@ -37,8 +41,10 @@ const About = () => {
                         <Side>
                             <h1>Language</h1>
                             <ul>
-                                <li>영어 <span>🟧 🟧 ⬜ ⬜ ️⬜️</span></li>
-                                <li>일본어 <span>🟧 🟧 🟧 ⬜ ⬜️️</span></li>
+                                <li><p>영어</p><ProgressBar completed={30} isLabelVisible={false} height={"15px"}
+                                                          bgColor={"#ff8644"} baseBgColor={"#F3F4F9"}/></li>
+                                <li><p>일본어</p><ProgressBar completed={50} isLabelVisible={false} height={"15px"}
+                                                           bgColor={"#ff8644"} baseBgColor={"#F3F4F9"}/></li>
                             </ul>
                         </Side>
                     </SecondSection>
@@ -54,7 +60,24 @@ const Container = styled(SectionContainer)`
 
 const Produce = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: space-evenly;
+
+  p {
+    color: #666;
+  }
+
+  li {
+    color: #666;
+  }
+
+
+  ${media.lessThan("sm")`
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  `};
 `;
 
 const ProfileImg = styled.img`
@@ -64,13 +87,29 @@ const ProfileImg = styled.img`
 `;
 
 const FirstSection = styled.div`
+
   h1 {
+    text-align: right;
     font-size: 30px;
+    line-height: 2;
   }
+
+
+  ${media.lessThan("sm")`
+    h1{
+        text-align: center;
+    }
+  `};
+
 `;
 
 const SecondSection = styled.div`
   margin-left: 30px;
+
+
+  ${media.lessThan("sm")`
+    margin-left: 0;
+  `};
 `;
 
 const Side = styled.div`
@@ -85,7 +124,7 @@ const Side = styled.div`
   }
 
   span {
-    color: #999;
+    color: #adadad;
   }
 
   ul {
@@ -93,7 +132,7 @@ const Side = styled.div`
   }
 
   li {
-    padding: 3px 0;
+    padding: 5px 0;
   }
 
 
