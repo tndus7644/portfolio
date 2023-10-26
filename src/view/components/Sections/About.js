@@ -43,8 +43,10 @@ const About = () => {
                             <ul>
                                 <li><p>영어</p><ProgressBar completed={30} isLabelVisible={false} height={"15px"}
                                                           bgColor={"#ff8644"} baseBgColor={"#F3F4F9"}/></li>
-                                <li><p>일본어</p><ProgressBar completed={50} isLabelVisible={false} height={"15px"}
-                                                           bgColor={"#ff8644"} baseBgColor={"#F3F4F9"}/></li>
+                                <li><p>일본어</p>
+                                    <ProgressBar completed={50} isLabelVisible={false} height={"15px"}
+                                                           bgColor={"#ff8644"} baseBgColor={"#F3F4F9"}/>
+                                </li>
                             </ul>
                         </Side>
                     </SecondSection>

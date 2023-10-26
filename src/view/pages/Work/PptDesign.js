@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Navigation} from 'swiper/modules';
 import Img1 from '../../../images/ppt/ppt_design_ver1_thumbnail.png';
+import PdfFile from "../../../file/pdf/ppt_designVer1_rev1.pdf";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -28,6 +29,9 @@ const PptDesign = () => {
                                 <p>Enter your description here</p>
                                 <p>Enter your description here</p>
                                 <p>Enter your description here</p>
+                                <a href={PdfFile} download={"PPT_PDF_document"} target={"_blank"} rel={"noreferrer"}>
+                                    <button>Download Pdf File</button>
+                                </a>
                             </Info>
                         </Contents>
                     </SwiperSlide>
