@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Navigation} from 'swiper/modules';
 import Img1 from '../../../images/ppt/ppt_design_ver1_thumbnail.png';
-import Img2 from '../../../images/poster/portfolio_poster2_rev1.jpg';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -79,12 +78,6 @@ const Img = styled.img`
   max-width: 700px;
 `;
 
-const Line = styled.div`
-  border: 1px solid #ff8644;
-  width: 100%;
-  height: 1px;
-  margin: 20px 0;
-`;
 
 const Info = styled.div`
   margin: 30px;
