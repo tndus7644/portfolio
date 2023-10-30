@@ -18,14 +18,14 @@ const Title = ({title, description}) => {
 const Container = styled.div`
   text-align: center;
   margin-bottom: 50px;
+
   h2 {
     font-size: 26px;
     text-transform: capitalize;
     font-weight: 500;
-    color: #333;
   }
-  
-  p{
+
+  p {
     margin-top: 15px;
     color: #777;
     line-height: 1.7;

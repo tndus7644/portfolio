@@ -17,6 +17,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     border: 0;
+    color: #333;
     vertical-align: baseline;
     font-family: "Pretendard KR", sans-serif;
   }
@@ -28,6 +29,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     line-height: 1;
+    background: #f1f1f1;
   }
 
   blockquote, q {

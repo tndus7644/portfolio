@@ -67,28 +67,55 @@ const Container = styled(SectionContainer)`
 
 const Contents = styled.div`
   display: flex;
+  width: 100%;
+  padding: 0 40px;
 
-  ${media.lessThan("md")`
+  ${media.lessThan("lg")`
       flex-direction: column;
-      align-items: center;
   `};
+
 `;
 
 const Img = styled.img`
-  width: 100%;
-  max-width: 500px;
-`;
+  width: 60%;
+  border-radius: 12px;
 
+  ${media.lessThan("lg")`
+      width: 100%;
+  `};
+`;
 
 const Info = styled.div`
   margin: 30px;
+  width: 40%;
+
+  ${media.lessThan("lg")`
+      width: 100%;
+  `};
 
   p {
     line-height: 2;
   }
 
-  h2{
+  h2 {
     margin-bottom: 20px;
+  }
+
+  button {
+    background: #fff;
+    border: 1px solid #ff8644;
+    border-radius: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+    color: #ff8644;
+    cursor: pointer;
+    width: 200px;
+
+    &:hover {
+      transition: 0.3s;
+      color: #fff;
+      background: #ff8644;
+    }
   }
 `;
 

@@ -15,7 +15,6 @@ const Skills = () => {
                     <ul>
                         <li>Illustrator</li>
                         <li>Photoshop</li>
-                        <li>Indesign</li>
                         <li>Figma</li>
                     </ul>
                 </SkillsContent>

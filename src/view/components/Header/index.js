@@ -66,7 +66,7 @@ const Container = styled.header`
   right: 0;
   z-index: 1000;
   box-shadow: ${setBoxShadow(1)};
-  background: #fff;
+  background: #f1f1f1;
   transform: translateY(-100%);
   transition: 0.4s;
 
@@ -78,7 +78,6 @@ const Container = styled.header`
 const Logo = styled.div`
   font-size: 20px;
   font-weight: bold;
-  color: #333;
 `;
 
 const Nav = styled.nav`

@@ -6,7 +6,7 @@ import Poster from "../pages/Work/Poster";
 import PptDesign from "../pages/Work/PptDesign";
 import Brochure from "../pages/Work/Brochure";
 import Package from "../pages/Work/Package";
-import Banner from "../pages/Work/Banner";
+import Graphic from "../pages/Work/Graphic";
 
 const Routes = () => {
 
@@ -15,9 +15,8 @@ const Routes = () => {
             <Route exact path="/" component={Home}/>
             <Route exact path="/poster" component={Poster}/>
             <Route exact path="/ppt" component={PptDesign}/>
-            <Route exact path="/brochure" component={Brochure}/>
             <Route exact path="/package" component={Package}/>
-            <Route exact path="/banner" component={Banner}/>z
+            <Route exact path="/graphic" component={Graphic}/>z
             <Route component={NotFound}/>
         </Switch>
     )

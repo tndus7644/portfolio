@@ -26,8 +26,9 @@ const WorkCard = ({name, description, url, tags, imgSrc}) => {
 
 const Container = styled.div`
   box-shadow: ${setBoxShadow(1)};
-  border-radius: 4px;
+  border-radius: 6px;
   overflow: hidden;
+  background: #fff;
   a {
     text-decoration: none;
   }
@@ -58,7 +59,6 @@ const Desc = styled.div`
     a {
       font-size: 20px;
       font-weight: 500;
-      color: #333;
 
       &:hover {
         color: #ff8644;

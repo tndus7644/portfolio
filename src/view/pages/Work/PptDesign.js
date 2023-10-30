@@ -3,14 +3,17 @@ import styled from 'styled-components';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Navigation} from 'swiper/modules';
 import Img1 from '../../../images/ppt/ppt_design_ver1_thumbnail.png';
-import PdfFile from "../../../file/pdf/ppt_designVer1_rev1.pdf";
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
+import Img2 from '../../../images/ppt/ppt_design_ver2_thumbnail.png';
+import PdfFile1 from "../../../file/pdf/ppt_designVer1_rev1.pdf";
+import PptFile1 from '../../../file/ppt/ppt_designVer1_rev1.pptx';
+import PdfFile2 from '../../../file/pdf/ppt_designVer2_rev1.pdf';
+import PptFile2 from '../../../file/ppt/ppt_designVer2_rev1.pptx';
 import {ContentContainer, SectionContainer} from "../../components/Layout/Layout.Styled";
 import Footer from "../../components/Footer";
 import {media} from "../../../styled/Responsive.Styled";
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 const PptDesign = () => {
 
@@ -29,22 +32,36 @@ const PptDesign = () => {
                                 <p>Enter your description here</p>
                                 <p>Enter your description here</p>
                                 <p>Enter your description here</p>
-                                <a href={PdfFile} download={"PPT_PDF_document"} target={"_blank"} rel={"noreferrer"}>
-                                    <button>Download Pdf File</button>
-                                </a>
+                                <p>
+                                    <a href={PdfFile1} download={"PPT_PDF_document"} target={"_blank"}
+                                       rel={"noreferrer"}>
+                                        <button>Download Pdf File</button>
+                                    </a></p>
+                                <p>
+                                    <a href={PptFile1} download={"PPT_document"} target={"_blank"} rel={"noreferrer"}>
+                                        <button>Download Powerpoint File</button>
+                                    </a></p>
                             </Info>
                         </Contents>
                     </SwiperSlide>
                     <SwiperSlide>
                         <Contents>
-                            <Img src={Img1} alt={"img2"}/>
+                            <Img src={Img2} alt={"img2"}/>
                             <Info>
                                 <h2>Title</h2>
                                 <p>Enter your description here</p>
                                 <p>Enter your description here</p>
                                 <p>Enter your description here</p>
                                 <p>Enter your description here</p>
-                                <p>Enter your description here</p>
+                                <p>Enter your description here</p><p>
+                                <a href={PdfFile2} download={"PPT_PDF_document"} target={"_blank"}
+                                   rel={"noreferrer"}>
+                                    <button>Download Pdf File</button>
+                                </a></p>
+                                <p>
+                                    <a href={PptFile2} download={"PPT_document"} target={"_blank"} rel={"noreferrer"}>
+                                        <button>Download Powerpoint File</button>
+                                    </a></p>
                             </Info>
                         </Contents>
                     </SwiperSlide>
@@ -70,28 +87,56 @@ const Container = styled(SectionContainer)`
 
 const Contents = styled.div`
   display: flex;
+  width: 100%;
+  padding: 0 40px;
 
-  ${media.lessThan("md")`
+  ${media.lessThan("lg")`
       flex-direction: column;
-      align-items: center;
   `};
+
 `;
 
 const Img = styled.img`
-  width: 100%;
-  max-width: 700px;
+  width: 70%;
+  border-radius: 12px;
+
+  ${media.lessThan("lg")`
+      width: 100%;
+  `};
 `;
 
 
 const Info = styled.div`
   margin: 30px;
+  width: 30%;
+
+  ${media.lessThan("lg")`
+      width: 100%;
+  `};
 
   p {
     line-height: 2;
   }
 
-  h2{
+  h2 {
     margin-bottom: 20px;
+  }
+
+  button {
+    background: #fff;
+    border: 1px solid #ff8644;
+    border-radius: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+    color: #ff8644;
+    cursor: pointer;
+    width: 200px;
+
+    &:hover {
+      transition: 0.3s;
+      color: #fff;
+      background: #ff8644;
+    }
   }
 `;
 
