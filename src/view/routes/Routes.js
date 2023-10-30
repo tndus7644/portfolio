@@ -4,7 +4,6 @@ import NotFound from "../pages/Results/NotFound";
 import Home from "../pages/Home";
 import Poster from "../pages/Work/Poster";
 import PptDesign from "../pages/Work/PptDesign";
-import Brochure from "../pages/Work/Brochure";
 import Package from "../pages/Work/Package";
 import Graphic from "../pages/Work/Graphic";
 
