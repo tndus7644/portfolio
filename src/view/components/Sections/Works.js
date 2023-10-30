@@ -96,7 +96,7 @@ const Works = () => {
                 <List data={works} render={render}/>
                 <MoreContent>
                     <p>작업물 더보기 <span>(클릭하면 원본을 확인할 수 있습니다)</span></p>
-                    <PhotoAlbum photos={photos} layout="rows" targetRowHeight={10}
+                    <PhotoAlbum photos={photos} layout="rows" targetRowHeight={150}
                                 onClick={({index}) => setIndex(index)}/>
                     <Lightbox
                         slides={lightBoxImg}

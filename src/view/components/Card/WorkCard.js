@@ -61,7 +61,7 @@ const Desc = styled.div`
       font-weight: 500;
 
       &:hover {
-        color: #ff8644;
+        color: #18f;
       }
     }
   }

@@ -32,7 +32,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   color: #fff;
-  background: #ff8644;
+  background: #18f;
   box-shadow: ${setBoxShadow(2)};
   cursor: pointer;
   transition: 0.4s;

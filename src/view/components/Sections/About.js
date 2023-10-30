@@ -42,10 +42,10 @@ const About = () => {
                             <h1>Language</h1>
                             <ul>
                                 <li><p>영어</p><ProgressBar completed={30} isLabelVisible={false} height={"15px"}
-                                                          bgColor={"#ff8644"} baseBgColor={"#e3e3e5"}/></li>
+                                                          bgColor={"#18f"} baseBgColor={"#e3e3e5"}/></li>
                                 <li><p>일본어</p>
                                     <ProgressBar completed={50} isLabelVisible={false} height={"15px"}
-                                                 bgColor={"#ff8644"} baseBgColor={"#e3e3e5"}/>
+                                                 bgColor={"#18f"} baseBgColor={"#e3e3e5"}/>
                                 </li>
                                 <li>
                                     2022. 02 JLPT N2 합격

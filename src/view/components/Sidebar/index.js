@@ -69,7 +69,7 @@ const NavItem = styled(Link)`
 
   &.isActive,
   &:hover {
-    color: #ff8644;
+    color: #18f;
   }
 `;
 

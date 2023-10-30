@@ -23,12 +23,12 @@ const Poster = () => {
                         <Contents>
                             <Img src={Img1} alt={"img1"}/>
                             <Info>
-                                <h2>Title</h2>
-                                <p>Enter your description here</p>
-                                <p>Enter your description here</p>
-                                <p>Enter your description here</p>
-                                <p>Enter your description here</p>
-                                <p>Enter your description here</p>
+                                <h2>미술 전시회 포스터</h2>
+                                <p>색을 조화롭게 사용해서 감각적 느낌을 내보았습니다.</p>
+                                <p>형상과 빛깔을 여러 방법으로 표현했으며, 글자는 모두</p>
+                                <p>어두운 컬러를 사용해서 포스터의 느낌과 다르게 대비를 주었습니다.</p>
+                                <p><span>제작 기간 : 2023. 10. 18</span></p>
+                                <p><span>사용 툴 : photoshop</span></p>
                             </Info>
                         </Contents>
                     </SwiperSlide>
@@ -36,12 +36,14 @@ const Poster = () => {
                         <Contents>
                             <Img src={Img2} alt={"img2"}/>
                             <Info>
-                                <h2>Title</h2>
-                                <p>Enter your description here</p>
-                                <p>Enter your description here</p>
-                                <p>Enter your description here</p>
-                                <p>Enter your description here</p>
-                                <p>Enter your description here</p>
+                                <h2>북 페스티벌 홍보 포스터</h2>
+                                <p>화려함보다 정적인 느낌을 내기 위해</p>
+                                <p>채도가 낮은 컬러를 메인으로 주로 사용했습니다.</p>
+                                <p>주요 고객층을 고려해 심플하고 귀여운 이미지의 일러스트를 사용했으며,</p>
+                                <p>종이 텍스처 느낌을 전반적으로 연출함으로써 북 페스티벌이란 취지에 맞도록</p>
+                                <p>포스터를 디자인한 것이 포인트입니다.</p>
+                                <p><span>제작 기간 : 2019. 10</span></p>
+                                <p><span>사용 툴 : photoshop, illustrator</span></p>
                             </Info>
                         </Contents>
                     </SwiperSlide>
@@ -59,7 +61,7 @@ const Container = styled(SectionContainer)`
     margin-bottom: 30px;
 
     span {
-      color: #ff8644;
+      color: #18f;
     }
   }
 
@@ -78,6 +80,7 @@ const Contents = styled.div`
 
 const Img = styled.img`
   width: 60%;
+  height: 100%;
   border-radius: 12px;
 
   ${media.lessThan("lg")`
@@ -95,6 +98,12 @@ const Info = styled.div`
 
   p {
     line-height: 2;
+    word-break: keep-all;
+  }
+  
+  span{
+    color: #999;
+    font-size: 14px;
   }
 
   h2 {
@@ -102,19 +111,19 @@ const Info = styled.div`
   }
 
   button {
-    background: #fff;
-    border: 1px solid #ff8644;
+    background: #f1f1f1;
+    border: 1px solid #18f;
     border-radius: 40px;
     height: 40px;
     margin-bottom: 15px;
-    color: #ff8644;
+    color: #18f;
     cursor: pointer;
     width: 200px;
 
     &:hover {
       transition: 0.3s;
-      color: #fff;
-      background: #ff8644;
+      color: #f1f1f1;
+      background: #18f;
     }
   }
 `;

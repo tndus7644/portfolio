@@ -26,12 +26,13 @@ const PptDesign = () => {
                         <Contents>
                             <Img src={Img1} alt={"img1"}/>
                             <Info>
-                                <h2>Title</h2>
-                                <p>Enter your description here</p>
-                                <p>Enter your description here</p>
-                                <p>Enter your description here</p>
-                                <p>Enter your description here</p>
-                                <p>Enter your description here</p>
+                                <h2>사업 전략 계획서 피피티</h2>
+                                <p>심플하고 차분한 느낌의 파워포인트 샘플입니다.</p>
+                                <p>구성 내용은 아래 pdf, ppt 파일에서 확인할 수 있습니다.</p>
+                                <p>ppt 파일은 애니메이션이 적용되어 있으며,</p>
+                                <p>메인 컬러를 디자인탭에서 변경할 수 있습니다.</p>
+                                <p><span>제작 기간 : 2023. 10. 25 ~ 2023. 10. 26</span></p>
+                                <p><span>사용 툴 : powerpoint</span></p>
                                 <p>
                                     <a href={PdfFile1} download={"PPT_PDF_document"} target={"_blank"}
                                        rel={"noreferrer"}>
@@ -48,12 +49,14 @@ const PptDesign = () => {
                         <Contents>
                             <Img src={Img2} alt={"img2"}/>
                             <Info>
-                                <h2>Title</h2>
-                                <p>Enter your description here</p>
-                                <p>Enter your description here</p>
-                                <p>Enter your description here</p>
-                                <p>Enter your description here</p>
-                                <p>Enter your description here</p><p>
+                                <h2>연간 보고서 피피티</h2>
+                                <p>심플하고 지적인 느낌의 파워포인트 샘플입니다.</p>
+                                <p>구성 내용은 아래 pdf, ppt 파일에서 확인할 수 있습니다.</p>
+                                <p>ppt 파일은 애니메이션이 적용되어 있으며,</p>
+                                <p>메인 컬러를 디자인탭에서 변경할 수 있습니다.</p>
+                                <p><span>제작 기간 : 2023. 10. 28 ~ 2023. 10. 29</span></p>
+                                <p><span>사용 툴 : powerpoint</span></p>
+                                <p>
                                 <a href={PdfFile2} download={"PPT_PDF_document"} target={"_blank"}
                                    rel={"noreferrer"}>
                                     <button>Download Pdf File</button>
@@ -79,7 +82,7 @@ const Container = styled(SectionContainer)`
     margin-bottom: 30px;
 
     span {
-      color: #ff8644;
+      color: #18f;
     }
   }
 
@@ -98,6 +101,7 @@ const Contents = styled.div`
 
 const Img = styled.img`
   width: 70%;
+  height: 100%;
   border-radius: 12px;
 
   ${media.lessThan("lg")`
@@ -116,6 +120,13 @@ const Info = styled.div`
 
   p {
     line-height: 2;
+    word-break: keep-all;
+  }
+
+
+  span{
+    color: #999;
+    font-size: 14px;
   }
 
   h2 {
@@ -123,19 +134,19 @@ const Info = styled.div`
   }
 
   button {
-    background: #fff;
-    border: 1px solid #ff8644;
+    background: #f1f1f1;
+    border: 1px solid #18f;
     border-radius: 40px;
     height: 40px;
     margin-bottom: 15px;
-    color: #ff8644;
+    color: #18f;
     cursor: pointer;
     width: 200px;
 
     &:hover {
       transition: 0.3s;
-      color: #fff;
-      background: #ff8644;
+      color: #f1f1f1;
+      background: #18f;
     }
   }
 `;

@@ -70,7 +70,7 @@ const Container = styled(SectionContainer)`
     margin-bottom: 30px;
 
     span {
-      color: #ff8644;
+      color: #18f;
     }
   }
 
@@ -109,6 +109,7 @@ const Info = styled.div`
 
   p {
     line-height: 2;
+    word-break: keep-all;
   }
 
   h2 {
@@ -117,18 +118,18 @@ const Info = styled.div`
 
   button {
     background: #fff;
-    border: 1px solid #ff8644;
+    border: 1px solid #18f;
     border-radius: 40px;
     height: 40px;
     margin-bottom: 15px;
-    color: #ff8644;
+    color: #18f;
     cursor: pointer;
     width: 200px;
 
     &:hover {
       transition: 0.3s;
       color: #fff;
-      background: #ff8644;
+      background: #18f;
     }
   }
 `;
